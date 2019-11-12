@@ -1,11 +1,11 @@
 let song, analyzer, fft, bg;
-const maxCircle = 180;
-const innerCircle = 30;
+const maxCircle = 200;
+const innerCircle = 50;
 const borderCircle = 5;
-const angleDivide = 3;
+const angleDivide = 2;
 
 function preload() {
-   song = loadSound('../assets/audio/byakkoya_ep.ogg');
+   song = loadSound('../assets/audio/activation.mp3');
    bg = loadImage('../assets/images/dash_hooray_by_rainbowcrab-d49xk0d.png');
 }
 
@@ -49,5 +49,5 @@ function draw() {
    noStroke();
 
    // Draw an ellipse with size based on volume
-   ellipse(0, 0, 20 + rms * 300, 20 + rms * 300);
+   ellipse(0, 0, 20 + rms * 200, 20 + rms * 200);
 }
